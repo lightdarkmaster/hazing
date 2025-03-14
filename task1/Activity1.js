@@ -66,7 +66,7 @@ console.log("Taask V: Create logic to meet the output below");
 
 const taskV = () => {
     const people = {
-        users: ["Alex", "James", "John"],
+        names: ["Alex", "James", "John"],
         professions: {
             Alex: "Software Engineer",
             James: "Wordpress Developer",
@@ -79,7 +79,7 @@ const taskV = () => {
         }
     };
 
-    const arrayPeople = people.users.map(user => {
+    const arrayPeople = people.names.map(user => {
         return {
             name: user,
             profession: people.professions[user],
