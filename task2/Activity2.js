@@ -1,6 +1,4 @@
-console.log("");
-console.log("");
-console.log("");
+console.log();
 console.log("1. Given these group of people. make it filtered of all the people who are old enough to see a R-18 movie.");
 const task1 = () => {
     const persons = [
@@ -16,9 +14,7 @@ const task1 = () => {
 }
 console.log(task1());
 
-console.log("");
-console.log("");
-console.log("");
+console.log();
 console.log("2. Create a sort function that will sort the order base on the libraryID , the function will accept two parameters, first parameter would be the object, second parameter would be the order (ascending, descending)");
 
 const sort = (object, order) => {
@@ -41,31 +37,95 @@ const sort = (object, order) => {
 
     return result;
 }
+console.log("Ascending Order: ");
+console.log(sort(null, 'ascending')); // padako tipa ubos
+console.log("Descending Order: ");
+console.log(sort(null, 'descending')); //pa guti tipa ubos..
 
-console.log(sort(null, 'ascending'));
-console.log(sort(null, 'descending'));
 
-
-console.log("");
-console.log("");
-console.log("");
+console.log();
 console.log("3. Given this object , create a function that will return the expected output");
 
 
+const convertToObject = (arr) => {
+    const result = {};
+    arr.forEach(([key, value]) => {
+        result[key] = value;
+    });
+    return result;
+};
+
+const input = [
+    ["a", 1],
+    ["b", 2],
+    ["c", 3],
+    ["d", 4],
+    ["e", 5],
+];
+
+console.log(convertToObject(input));
 
 
-
-console.log("");
-console.log("");
-console.log("");
+console.log();
 console.log("4. Given the pets object, create a function that return the expected output");
 
+const taskIV = () => {
+    const pets = {
+        dog: {
+            name: "Buddy",
+            breed: "Golden Retriever",
+            age: 3,
+            color: "Golden",
+            favoriteToy: "Tennis ball"
+        },
+        cat: {
+            name: "Whiskers",
+            breed: "Siamese",
+            age: 2,
+            color: "Cream and Brown",
+            favoriteToy: "Feather wand"
+        },
+        fish: {
+            name: "Splash",
+            type: "Goldfish",
+            age: 1,
+            color: "Orange",
+            tankSize: "10 gallons"
+        },
+        hamster: {
+            name: "Nibbles",
+            breed: "Syrian",
+            age: 1,
+            color: "Brown",
+            wheelColor: "Blue"
+        }
+    };
+    const dog = pets.dog;
+    console.log(
+        ` "My pet's name is ${dog.name}. ${dog.name} is ${dog.age} years old ${dog.breed}, and ${dog.name}'s color is ${dog.color}, and he loves to play ${dog.favoriteToy}".`
+    );
+}
+console.log();
+console.log(taskIV());
 
 
 
 
 
-console.log("");
-console.log("");
-console.log("");
+console.log();
 console.log("5. Create a function that will calculate Nikka’s average grade.");
+
+const calculateAverage = () => {
+    nicasGrades = {
+        math: 90,
+        science: 85,
+        history: 75,
+        english: 88
+    };
+    const sum = Object.values(nicasGrades).reduce((acc, grade) => acc + grade, 0);
+    const average = sum / Object.values(nicasGrades).length;
+    console.log(`Nikka's average grade is ${average}`);
+}
+console.log();
+console.log(calculateAverage());
+console.log();
