@@ -1,6 +1,4 @@
-console.log("");
-console.log("");
-console.log("");
+console.log();
 console.log("Task I: Create a function that filters an array of strings based on the length of each string, returning only strings longer than a specified length.");
 
 const test1 = (array, length) => {
@@ -10,9 +8,8 @@ const test1 = (array, length) => {
 }
 
 console.log(test1(["Apple", "Banana", "Peaches", "Mangoes", "Absdedede", "Apt"], 6));
-console.log("");
-console.log("");
-console.log("");
+console.log();
+
 
 console.log("Task II: Implement a function that squares each number in an array, returning a new array with the squared values.");
 const test2 = (array) => {
@@ -22,9 +19,7 @@ const test2 = (array) => {
 
 }
 console.log(test2([1, 2, 3, 4, 5, 6]));
-console.log("");
-console.log("");
-console.log("");
+console.log();
 
 console.log("Task III: Write a function that logs each element of an array along with its index in a specified format.");
 const animals = ["Dog", "Cat", "Rabbit", "Lion", "Tiger", "Elephant"];
@@ -34,9 +29,7 @@ for (let i of a) {
     console.log(i)
 }
 
-console.log("");
-console.log("");
-console.log("");
+console.log();
 console.log("Task IV: Create logic to meet the expected output:");
 
 const myFunction = () => {
@@ -58,9 +51,7 @@ const myFunction = () => {
 
 console.log(myFunction());
 
-console.log("");
-console.log("");
-console.log("");
+console.log();
 console.log("Taask V: Create logic to meet the output below");
 
 
