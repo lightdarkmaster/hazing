@@ -12,7 +12,7 @@ const task1 = () => {
     return result;
 
 }
-console.log(task1());
+console.log('\n',task1());
 
 console.log();
 console.log("2. Create a sort function that will sort the order base on the libraryID , the function will accept two parameters, first parameter would be the object, second parameter would be the order (ascending, descending)");
@@ -43,8 +43,7 @@ console.log("Descending Order: ");
 console.log(sort(null, 'descending')); //pa guti tipa ubos..
 
 
-console.log();
-console.log("3. Given this object , create a function that will return the expected output");
+console.log('\n',"3. Given this object , create a function that will return the expected output");
 
 
 const convertToObject = (arr) => {
@@ -63,11 +62,10 @@ const input = [
     ["e", 5],
 ];
 
-console.log(convertToObject(input));
+console.log('\n',convertToObject(input));
 
 
-console.log();
-console.log("4. Given the pets object, create a function that return the expected output");
+console.log('\n',"4. Given the pets object, create a function that return the expected output");
 
 const taskIV = () => {
     const pets = {
@@ -101,19 +99,17 @@ const taskIV = () => {
         }
     };
     const dog = pets.dog;
-    console.log(
-        ` "My pet's name is ${dog.name}. ${dog.name} is ${dog.age} years old ${dog.breed}, and ${dog.name}'s color is ${dog.color}, and he loves to play ${dog.favoriteToy}".`
+    console.log('\n',    
+    ` "My pet's name is ${dog.name}. ${dog.name} is ${dog.age} years old ${dog.breed}, and ${dog.name}'s color is ${dog.color}, and he loves to play ${dog.favoriteToy}".`
     );
 }
-console.log();
-console.log(taskIV());
+taskIV();
 
 
 
 
 
-console.log();
-console.log("5. Create a function that will calculate Nikka’s average grade.");
+console.log('\n',"5. Create a function that will calculate Nikka’s average grade.");
 
 const calculateAverage = () => {
     nicasGrades = {
@@ -124,8 +120,7 @@ const calculateAverage = () => {
     };
     const sum = Object.values(nicasGrades).reduce((acc, grade) => acc + grade, 0);
     const average = sum / Object.values(nicasGrades).length;
-    console.log(`Nikka's average grade is ${average}`);
+    console.log('\n',`Nikka's average grade is ${average}`);
 }
-console.log();
-console.log(calculateAverage());
-console.log();
+
+// console.log('\n',calculateAverage());
