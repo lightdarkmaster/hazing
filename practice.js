@@ -9,7 +9,6 @@ console.log(cubes);
 
 
 
-
 //Uppercase
 const students = ["Chan", "Jackie", "Policarpio","Thomas", "Anna"];
 const upperCase=(element)=>{
@@ -52,3 +51,40 @@ const discountedPrices = price.map((prices)=> {
 })
 
 console.log("Direct exe " + discountedPrices);
+
+
+const clientFirstName = ["John", "Jane", "Alex", "Emily", "Chris", "Sarah", "Michael", "Laura", "David", "Emma"];
+const clientLastName = ["Smith", "Johnson", "Brown", "Taylor", "Anderson", "Thomas", "Jackson", "White", "Harris", "Martin"];
+
+const generateRandomName = () => {
+  const first = clientFirstName[Math.floor(Math.random() * clientFirstName.length)];
+  const last = clientLastName[Math.floor(Math.random() * clientLastName.length)];
+  return `${first} ${last}`;
+};
+
+const getCient = Array.from({ length: 100 }, generateRandomName);
+
+console.log(getCient);
+
+
+
+const address = ["Zone-4-Santafe","Zone-3-Santafe","Zone-2-Santafe","Zone-1-Santafe"];
+
+const arrange=(element)=>{
+    const separate = element.split("-");
+    return `${separate[2]}-${separate[0]}-${separate[1]}`
+}
+const upperCaseAddress=(element)=>{
+    return element.toUpperCase();
+}
+
+
+
+const newData = address.map(arrange);
+const appliedFunc = newData.map(upperCase);
+console.log(appliedFunc);
+
+const newData2 = appliedFunc.map((appliedFunc)=>{
+    return appliedFunc.toLowerCase();
+})
+console.log(newData2);
