@@ -15,7 +15,6 @@ const taskV = () => {
     });
 
     console.log(reformattedArray);
-    //console.log(users);
 };
 
 
