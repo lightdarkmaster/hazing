@@ -29,3 +29,18 @@ const findName =(element)=>{
 
 const searchName = names.filter(findName);
 console.log(searchName);
+
+
+const ages = [16,17,18,18,19,20,60];
+
+const isAdult =(element)=>{
+    return element < 18;
+}
+
+const newAge = ages.filter(isAdult);
+console.log(newAge);
+
+const belowSixteen = newAge.filter((newData)=>{
+    return newData < 17;
+})
+console.log(belowSixteen);
