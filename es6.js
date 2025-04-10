@@ -13,9 +13,9 @@ const square = (num) => num * num;
 console.log(`Square of 4: ${square(4)}`);
 
 // Destructuring
-const user = { name: "Alice", age: 25, country: "USA" };
-const { name, age } = user;
-console.log(`User: ${name}, Age: ${age}`);
+const user = { firstName: "Alice", age: 25, country: "USA" };
+const { firstName, age } = user;
+console.log(`User: ${firstName}, Age: ${age}`);
 
 // Spread Operator
 const numbers = [1, 2, 3];
