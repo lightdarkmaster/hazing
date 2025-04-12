@@ -19,3 +19,4 @@ const animals ={
 const animalsData = {land, status, nickname} = animals
 
 console.log(animalsData);
+
