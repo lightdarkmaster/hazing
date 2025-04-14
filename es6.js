@@ -55,6 +55,7 @@ student1.study();
 const fetchData = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => resolve("Data fetched!"), 2000);
+    setTimeout(()=> reject("Data Reject "), 2000);
   });
 };
 
