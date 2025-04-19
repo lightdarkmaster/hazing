@@ -1,5 +1,3 @@
-// Importing module
-// import { add, subtract } from './mathUtils.js';
 
 // Variables: let & const
 const PI = 3.14159;
