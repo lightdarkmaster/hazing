@@ -44,3 +44,4 @@ const belowSixteen = newAge.filter((newData)=>{
     return newData < 17;
 })
 console.log(belowSixteen);
+console.log(belowSixteen + " and is below "+ newAge + "years old");
