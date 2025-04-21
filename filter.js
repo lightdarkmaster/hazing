@@ -16,7 +16,7 @@ console.log(newValue);
 
 
 
-const names = ["Chan", "Zed","Chan", "Troy","Nica", "Bellion", "Chan"];
+const names = ["Chan", "Zed","Chan", "Troy","Nica", "Bellion", "Chan", "Igris", "Beru"];
 
 
 const findName =(element)=>{
