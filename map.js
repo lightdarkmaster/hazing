@@ -7,6 +7,13 @@ const cube =(element)=>{
 const cubes = numbers.map(cube);
 console.log(cubes);
 
+const square = (element)=>{
+    return Math.pow(element, 2);
+}
+
+const squares = numbers.map(square);
+console.log(squares);
+
 
 
 //Uppercase
