@@ -67,4 +67,4 @@ const changeAge = (item)=>{
 }
 
 const sampleData = data.map(changeAge);
-console.log("Change age" + sampleData);
+console.log(sampleData);
