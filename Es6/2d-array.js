@@ -125,4 +125,5 @@ const validatePasswordStrength =(password)=>{
 }
 
 console.log(validatePasswordStrength("P"));
+console.log(validatePasswordStrength("adshdshdPPpPandsdsn121212!!!"))
 
