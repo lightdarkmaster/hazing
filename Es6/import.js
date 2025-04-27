@@ -75,3 +75,5 @@ const traders = [new Trader('Alice', 5000), new Trader('Bob', 10000)];
 
 const market = new StockMarket(stocks);
 market.startTrading(traders);
+
+console.log("End of the  code here...")
