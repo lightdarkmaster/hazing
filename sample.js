@@ -1,3 +1,5 @@
+//Pag square na dire nag mumultiply or nagamit hin library...
+
 const square = (num) => {
     if (num === 0) return 0;
   
@@ -30,4 +32,15 @@ const square1 = (num) => {
   };
   
   console.log(square1(5));
+
+  const anotherFunction =(num)=>{
+    return num * num;
+  }
   
+  console.log(anotherFunction(9));
+
+  const sol =(element)=>{
+    return Math.pow(element, 2);
+  }
+
+console.log(sol(2));
