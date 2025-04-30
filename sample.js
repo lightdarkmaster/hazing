@@ -38,3 +38,9 @@ const square1 = (num) => {
   }
   
   console.log(anotherFunction(9));
+
+  const sol =(element)=>{
+    return Math.pow(element, 2);
+  }
+
+console.log(sol(2));
