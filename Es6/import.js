@@ -1,3 +1,4 @@
+import QRCode from 'qrcode'
 class Stock {
     constructor(symbol, price) {
         this.symbol = symbol;
@@ -77,3 +78,25 @@ const market = new StockMarket(stocks);
 market.startTrading(traders);
 
 console.log("End of the  code here...")
+
+
+//qrcode sample library here: 
+var QRCode = require('qrcode')
+var canvas = document.getElementById('canvas')
+
+QRCode.toCanvas(canvas, 'sample text', function (error) {
+  if (error) console.error(error)
+  console.log('success!');
+})
+
+var QRCode = require('qrcode')
+
+QRCode.toDataURL('I am a pony!', function (err, url) {
+  console.log(url)
+})
+
+var QRCode = require('qrcode')
+
+QRCode.toString('I am a pony!',{type:'terminal'}, function (err, url) {
+  console.log(url)
+})
