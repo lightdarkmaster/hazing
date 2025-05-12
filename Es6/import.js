@@ -100,3 +100,10 @@ var QRCode = require('qrcode')
 QRCode.toString('I am a pony!',{type:'terminal'}, function (err, url) {
   console.log(url)
 })
+
+const qrcode = require('qrcode');
+const canvas = document.getElementById('canvas');
+qrcode.toCanvas(canvas, 'sample text', function (error) {
+  if (error) console.error(error)
+  console.log('success!');
+});
