@@ -29,3 +29,8 @@ function processComplexAlgorithm(input) {
 const userInput = " HelloWorld123 ";
 console.log(processComplexAlgorithm(userInput));
 
+const defineFunction=(element)=>{
+  return element = element * element;
+}
+
+console.log(defineFunction(2));
