@@ -21,7 +21,7 @@ class OJTHourSolver:
         tk.Label(self.frm, text="OJT Hour Solver", font=self.titleFont, bg="white").pack(pady=20);
 
         tk.Label(self.frm, text="Enter Rendered Hours: ", font=self.normalFont, bg="white").pack();
-        self.hoursRenderedEntry = tk.Entry(self.frm, font=self.normalFont, width=20);
+        self.hoursRenderedEntry = tk.Entry(self.frm, font=self.normalFont, width=20);  
         self.hoursRenderedEntry.pack(pady=10);
 
         tk.Button(self.frm, text="Calculate", command=self.solve, font=self.normalFont, bg="green", fg="white").pack(pady=10);
