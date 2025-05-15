@@ -5,7 +5,7 @@ import datetime
 
 class OJTHourSolver:
     def __init__(self, root):
-        self.root = root
+        self.root = root;
         self.root.title("OJT Hour Solver");
         self.root.geometry("500x500");
         self.initUI();
