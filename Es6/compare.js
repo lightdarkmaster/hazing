@@ -34,3 +34,15 @@ const defineFunction=(element)=>{
 }
 
 console.log(defineFunction(2));
+
+const hours = 386;
+const totalHoursNeeded = 486;
+const result = totalHoursNeeded - hours;
+const howManyDays = result / 8;
+const end = 15 + howManyDays;
+const rounded = Math.round(end);
+
+
+console.log(result);
+console.log("Remaining days: " + howManyDays);
+console.log("End Date: May " + rounded + ", 2025");
