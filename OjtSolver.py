@@ -9,7 +9,8 @@ class OJTHourSolver:
         self.root.title("OJT Hour Solver");
         self.root.geometry("500x500");
         self.initUI();
-
+        self.root.resizable(False, False);
+        
     def initUI(self):
         self.frm = tk.Frame(self.root, bg="white");
         self.frm.pack(fill="both", expand=True);
@@ -23,7 +24,7 @@ class OJTHourSolver:
         self.hoursRenderedEntry = tk.Entry(self.frm, font=self.normalFont, width=20);
         self.hoursRenderedEntry.pack(pady=10);
 
-        tk.Button(self.frm, text="Calculate", command=self.solve, font=self.normalFont).pack(pady=10);
+        tk.Button(self.frm, text="Calculate", command=self.solve, font=self.normalFont, bg="green", fg="white").pack(pady=10);
 
         Separator(self.frm, orient="horizontal").pack(fill="x", pady=20);
 
