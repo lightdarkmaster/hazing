@@ -42,7 +42,7 @@ class OJTHourSolver:
             
             
 
-
+## Loop And Run
 if __name__ == "__main__":
     root = tk.Tk();
     app = OJTHourSolver(root);
