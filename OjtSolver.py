@@ -19,6 +19,7 @@ class OJTHourSolver:
         self.normalFont = tkfont.Font(family="Helvetica", size=18);
 
         tk.Label(self.frm, text="OJT Hour Solver", font=self.titleFont, bg="white").pack(pady=20);
+        tk.Label(self.frm, text="Note: Assuming that you will render 8 hours per day \nand no absence starting today.", font=("Tahoma", 10, "italic"), bg="white").pack();
 
         tk.Label(self.frm, text="Enter Rendered Hours: ", font=self.normalFont, bg="white").pack();
         self.hoursRenderedEntry = tk.Entry(self.frm, font=self.normalFont, width=20);  
@@ -41,7 +42,7 @@ class OJTHourSolver:
             
             
 
-
+## Loop And Run
 if __name__ == "__main__":
     root = tk.Tk();
     app = OJTHourSolver(root);
