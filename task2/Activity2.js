@@ -124,3 +124,4 @@ const calculateAverage = () => {
 }
 
 // console.log('\n',calculateAverage());
+//calculate the average
