@@ -123,5 +123,10 @@ const calculateAverage = () => {
     console.log('\n',`Nikka's average grade is ${average}`);
 }
 
+
+const calAve=()=>{
+    return calculateAverage();
+}
+
 // console.log('\n',calculateAverage());
 //calculate the average
