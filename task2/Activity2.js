@@ -125,7 +125,8 @@ const calculateAverage = () => {
 
 
 const calAve=()=>{
-    return calculateAverage();
+    return result = num1 * num2;
+    console.log(result);
 }
 
 // console.log('\n',calculateAverage());
