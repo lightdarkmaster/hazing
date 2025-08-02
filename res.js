@@ -2,7 +2,9 @@ const getSum=(num1, num2)=>{
     return num1 + num2;
 }
 
-t
+const getDifference=(num1, num2)=>{
+    return num1 - num2;
+}
 
 console.log(getSum(1, 2));
 
