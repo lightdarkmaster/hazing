@@ -1,11 +1,20 @@
-const getSum=(num1, num2)=>{
-    return num1 + num2;
-}
+const add = (a, b) => a + b;
 
-const getDifference=(num1, num2)=>{
-    return num1 - num2;
-}
+const subtract = (a, b) => a - b;
 
-console.log(getSum(1, 2));
+const multiply = (a, b) => a * b;
 
-console.log(getSums(1, 12));
+const divide = (a, b) => {
+    if (b === 0) throw new Error("Division by zero is undefined");
+    return a / b;
+};
+
+const complexMathSolver = (num1, num2) => {
+    console.log(`Addition: ${add(num1, num2)}`);
+    console.log(`Subtraction: ${subtract(num1, num2)}`);
+    console.log(`Multiplication: ${multiply(num1, num2)}`);
+    console.log(`Division: ${divide(num1, num2)}`);
+};
+
+complexMathSolver(1, 2);
+complexMathSolver(1, 12);
