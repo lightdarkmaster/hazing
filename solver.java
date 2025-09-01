@@ -7,7 +7,7 @@ class solver {
         Scanner input = new Scanner(System.in);
 
         int totalHoursNeeded = 486;
-        double endDate = 
+        double endDate = 78;
 
         System.out.print("Enter Rendered Hours: ");
         int renderedHours = input.nextInt();
