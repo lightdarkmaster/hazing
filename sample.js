@@ -44,3 +44,10 @@ const square1 = (num) => {
   }
 
 console.log(sol(3));
+
+const multiply =(num)=>{
+  result = num * num;
+  return result;
+}
+
+console.log(multiply(3));
