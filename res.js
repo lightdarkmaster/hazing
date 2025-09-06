@@ -16,5 +16,6 @@ const complexMathSolver = (num1, num2) => {
     console.log(`Division: ${divide(num1, num2)}`);
 };
 
+complexMathSolver(3,5);
 complexMathSolver(1, 2);
 complexMathSolver(1, 12);
