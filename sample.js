@@ -51,3 +51,29 @@ const multiply =(num)=>{
 }
 
 console.log(multiply(3));
+
+
+const multiply1 =(num)=>{
+  return num * num;
+}
+
+console.clear();
+console.log(multiply1(3));
+
+const createRecord = (name, age, occupation) => {
+    return {
+      name,
+      age,
+      occupation
+    };
+  };
+
+  console.log(createRecord("Chan", 22, "Programmer"));
+
+  const createRecord1 = (name, age, occupation) => ({
+    name,
+    age,
+    occupation
+  });
+  
+  console.log(createRecord1("Chan", 22, "Programmer"));
