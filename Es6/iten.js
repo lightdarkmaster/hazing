@@ -14,3 +14,7 @@ let firstName = "Chan";
 
 firstName = firstName === "Chan" ? "Yes" : "No"
 console.log(firstName);
+
+
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+const oddNumbers = numbers.filter(num => num % 2 !== 0);
