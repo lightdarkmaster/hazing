@@ -1,13 +1,19 @@
-const total = 1000000000;
-const vans = 6;
-const luggages = 50000000;
+/**
+ * Calculate the total number of luggages and the number of luggages per van
+ * @param {number} total - the total number of luggages
+ * @param {number} vans - the number of vans
+ * @param {number} luggages - the number of luggages per van
+ */
+function calculateLuggagesPerVan(total, vans, luggages) {
+    // calculate the total number of luggages
+    const howManyLuggages = Math.floor(total / luggages);
+    console.log("total luggages: " + howManyLuggages);
 
-//problem 1
-const howManyLuggages = Math.floor(total / luggages);
-console.log("total luggages: " + howManyLuggages);
+    // calculate the number of luggages per van
+    const howManyLuggagesPerVan = howManyLuggages / vans;
+    console.log("total luggages per van: " + howManyLuggagesPerVan);
+}
 
-
-//problem 2
-const howManyLuggagesPerVan = howManyLuggages / vans;
-console.log("total luggages per van: " + howManyLuggagesPerVan);
+// call the function with the parameters
+calculateLuggagesPerVan(total, vans, luggages);
 
