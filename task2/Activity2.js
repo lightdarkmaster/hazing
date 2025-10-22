@@ -122,26 +122,4 @@ const calculateAverage = () => {
     const average = sum / Object.values(nicasGrades).length;
     console.log('\n',`Nikka's average grade is ${average}`);
 }
-
-
-const calAve=()=>{
-    return result = num1 * num2;
-    console.log(result);
-}
-
-const average = () => {
-    nicasGrades = {
-        math: 90,
-        science: 85,
-        history: 75,
-        english: 88
-    };
-    const sum = Object.values(nicasGrades).reduce((acc, grade) => acc + grade, 0);
-    const average = sum / Object.values(nicasGrades).length;
-    console.log('\n',`Nikka's average grade is ${average}`);
-}
-
-console.log('\n',average());
-
-console.log('\n',calculateAverage());
-// calculate the average
+calculateAverage();
