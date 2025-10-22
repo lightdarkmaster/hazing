@@ -143,5 +143,5 @@ const average = () => {
 
 console.log('\n',average());
 
-// console.log('\n',calculateAverage());
-//calculate the average
+console.log('\n',calculateAverage());
+// calculate the average
