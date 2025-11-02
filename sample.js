@@ -1,5 +1,4 @@
 //Pag square na dire nag mumultiply or nagamit hin library...
-
 const square = (num) => {
     if (num === 0) return 0;
   
