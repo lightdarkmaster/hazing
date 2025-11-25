@@ -17,3 +17,11 @@ function calculateLuggagesPerVan(total, vans, luggages) {
 // call the function with the parameters
 calculateLuggagesPerVan(total, vans, luggages);
 
+
+const test=()=>{
+    var total = 100;
+    var vans = 10;
+    var luggages = 10;
+    calculateLuggagesPerVan(total, vans, luggages);
+}
+
