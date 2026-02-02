@@ -2,7 +2,7 @@
  * This program is an OJT Hour Solver that calculates the remaining hours needed
  * to reach the target total hours based on the rendered hours input by the user.
  *
- * @author [Your Name]
+ * @author Christian Barbosa
  */
 import java.util.Scanner;
 
