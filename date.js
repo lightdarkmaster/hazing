@@ -12,4 +12,5 @@ const getDateSum = (string) =>{
     console.log(string);
 }
 
+
 console.log(getDateSum(20240610));
