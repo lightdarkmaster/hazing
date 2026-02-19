@@ -15,4 +15,12 @@ const fib = (length) => {
     }
 }
 
+const getDate = () => new Date().toString().slice(0, 10);
+console.log(getDate());
+
+const currentYear = new Date().getFullYear();
+console.log(currentYear.toString());
+
+const getCurrentMonth = new Date().getMonth().toString();
+console.log(getCurrentMonth);
 console.log(fib(9));
