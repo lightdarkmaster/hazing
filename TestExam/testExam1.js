@@ -26,3 +26,7 @@ if(wordToLowerCase.length > 0){
 }else{
     console.log("Invalid Input, Reason only 1 letter or numbers inputed or empty string");
 }
+
+
+
+//This is notes...
