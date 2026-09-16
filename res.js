@@ -23,3 +23,6 @@ console.log(calculate(10, 5, add)); // 15
 complexMathSolver(3,5);
 complexMathSolver(1, 2);
 complexMathSolver(1, 12);
+
+
+//end of the code..

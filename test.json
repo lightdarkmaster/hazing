@@ -1,0 +1,128 @@
+{
+  "data": {
+    "customerProfile": [
+      {
+        "CustomerNumber": "0001000300",
+        "AccountName": "MARBIBI RUTH",
+        "StreetHouseNumber": null,
+        "City": "ANTIPOLO, RIZAL",
+        "PostalCode": "1870",
+        "Region": "",
+        "District": "",
+        "Country": "PH",
+        "SalesOrg": "PC",
+        "DistributionChannel": "MK",
+        "Division": "AM",
+        "SalesGroup": "RE3",
+        "ServiceOrganization": "MSM",
+        "RegionMarket": "S1475"
+      },
+      {
+        "CustomerNumber": "0001000300",
+        "AccountName": "MARBIBI RUTH",
+        "StreetHouseNumber": null,
+        "City": "ANTIPOLO, RIZAL",
+        "PostalCode": "1870",
+        "Region": "",
+        "District": "",
+        "Country": "PH",
+        "SalesOrg": "PC",
+        "DistributionChannel": "MK",
+        "Division": "FU",
+        "SalesGroup": "RE3",
+        "ServiceOrganization": "MSM",
+        "RegionMarket": "S1475"
+      },
+      {
+        "CustomerNumber": "0001000300",
+        "AccountName": "MARBIBI RUTH",
+        "StreetHouseNumber": null,
+        "City": "ANTIPOLO, RIZAL",
+        "PostalCode": "1870",
+        "Region": "",
+        "District": "",
+        "Country": "PH",
+        "SalesOrg": "PC",
+        "DistributionChannel": "MK",
+        "Division": "LG",
+        "SalesGroup": "RE3",
+        "ServiceOrganization": "MSM",
+        "RegionMarket": "S1475"
+      },
+      {
+        "CustomerNumber": "0001000300",
+        "AccountName": "MARBIBI RUTH",
+        "StreetHouseNumber": null,
+        "City": "ANTIPOLO, RIZAL",
+        "PostalCode": "1870",
+        "Region": "",
+        "District": "",
+        "Country": "PH",
+        "SalesOrg": "PC",
+        "DistributionChannel": "MK",
+        "Division": "NT",
+        "SalesGroup": "RE3",
+        "ServiceOrganization": "MSM",
+        "RegionMarket": "S1475"
+      }
+    ],
+    "contactInfo": [
+      {
+        "ContactName": "FROILAN CORNEL",
+        "ContactFunc": "35",
+        "ContactRole": "Supervisor",
+        "Email": "",
+        "Phone": "09176598693",
+        "TelNo": "09176598693"
+      },
+      {
+        "ContactName": "RUTH MARBIBI",
+        "ContactFunc": "30",
+        "ContactRole": "Owner/Proprietor",
+        "Email": "",
+        "Phone": "",
+        "TelNo": ""
+      },
+      {
+        "ContactName": "RUTH MARBIBI",
+        "ContactFunc": "77",
+        "ContactRole": "SMS Dealer Primary",
+        "Email": "rrpetron26@gmail.com",
+        "Phone": "02-6455906",
+        "TelNo": "02-6455906"
+      },
+      {
+        "ContactName": " MARBIBI RUTH",
+        "ContactFunc": "80",
+        "ContactRole": "SOA - Email",
+        "Email": "ruthmarbibi@yahoo.com",
+        "Phone": "02-6455906",
+        "TelNo": "02-6455906"
+      },
+      {
+        "ContactName": "ANDREW CHIANG",
+        "ContactFunc": "",
+        "ContactRole": "",
+        "Email": "",
+        "Phone": "",
+        "TelNo": ""
+      },
+      {
+        "ContactName": "RACHEL TIBUS",
+        "ContactFunc": "",
+        "ContactRole": "",
+        "Email": "",
+        "Phone": "",
+        "TelNo": ""
+      }
+    ],
+    "aseInfo": {
+      "ASEName": "David Angelo D. Padilla",
+      "ASEEmail": "ddpadilla@petron.com"
+    },
+    "asmInfo": {
+      "ASMName": "Rodolfo R. Estrella",
+      "ASMEmail": "rrestrella@petron.com"
+    }
+  }
+}
