@@ -1,4 +1,4 @@
-const word = "Eagle";
+const word = "Pig";
 const wordToLowerCase = word.toLowerCase();
 const vowels = ["a", "e", "i", "o", "u"];
 
