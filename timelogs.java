@@ -7,5 +7,18 @@ public class timelogs {
         System.out.println("Target Logs Per Day: " + timelogs.targetLogsPerDay);
         System.out.println("Current Logs: " + timelogs.currentLogs);
         System.out.println("Remaining Logs: " + timelogs.remainingLogs);
+
+        timelogs();
+    }
+
+
+
+
+    public static void timelogs(){
+        if(remainingLogs > 0){
+            System.out.println("You have " + remainingLogs + " logs remaining.");
+        } else {
+            System.out.println("You have " + remainingLogs + " logs remaining.");
+        }
     }
 }
