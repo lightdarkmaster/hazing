@@ -21,4 +21,12 @@ public class timelogs {
             System.out.println("You have " + remainingLogs + " logs remaining.");
         }
     }
+    
+
+    public void createStatus(){
+        System.out.println("Target Logs Per Day: " + timelogs.targetLogsPerDay);
+        System.out.println("Current Logs: " + timelogs.currentLogs);
+        System.out.println("Remaining Logs: " + timelogs.remainingLogs);
+    }
+
 }
