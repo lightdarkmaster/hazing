@@ -14,6 +14,7 @@ public class timelogs {
 
 
 
+    //No Clear Details on this...
     public static void timelogs(){
         if(remainingLogs > 0){
             System.out.println("You have " + remainingLogs + " logs remaining.");
