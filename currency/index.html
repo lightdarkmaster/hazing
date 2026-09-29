@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PHP to USD Exchange Rate</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 380px; margin: 40px auto; padding: 0 16px; }
+    input, button { font-size: 16px; padding: 8px; width: 100%; box-sizing: border-box; margin-top: 8px; }
+    #rate, #result { margin-top: 16px; font-size: 18px; }
+    small { color: #666; }
+  </style>
+</head>
+<body>
+  <h2>PHP → USD</h2>
+  <div id="rate">Loading rate...</div>
+
+  <input id="amount" type="number" min="0" placeholder="Amount in PHP (₱)" />
+  <div id="result"></div>
+  <small id="updated"></small>
+
+  <script>
+    const CACHE_KEY = "php_usd_rate";
+    const TTL_MS = 60 * 60 * 1000; // 1 hour
+    let rate = null;
+
+    async function getRate() {
+      // Use cached value if fresh
+      try {
+        const cached = JSON.parse(localStorage.getItem(CACHE_KEY));
+        if (cached && Date.now() - cached.fetchedAt < TTL_MS) return cached;
+      } catch (e) {}
+
+      const res = await fetch("https://open.er-api.com/v6/latest/PHP");
+      const data = await res.json();
+      if (data.result !== "success") throw new Error("Provider error");
+
+      const fresh = { rate: data.rates.USD, fetchedAt: Date.now() };
+      try { localStorage.setItem(CACHE_KEY, JSON.stringify(fresh)); } catch (e) {}
+      return fresh;
+    }
+
+    function convert() {
+      const amount = parseFloat(document.getElementById("amount").value);
+      document.getElementById("result").textContent =
+        rate && !isNaN(amount)
+          ? `₱${amount.toLocaleString()} ≈ $${(amount * rate).toFixed(2)}`
+          : "";
+    }
+
+    (async () => {
+      try {
+        const data = await getRate();
+        rate = data.rate;
+        document.getElementById("rate").textContent = `1 PHP = ${rate.toFixed(4)} USD`;
+        document.getElementById("updated").textContent =
+          "Fetched: " + new Date(data.fetchedAt).toLocaleString();
+        document.getElementById("amount").addEventListener("input", convert);
+      } catch (err) {
+        document.getElementById("rate").textContent = "Could not load exchange rate.";
+      }
+    })();
+  </script>
+</body>
+</html>
