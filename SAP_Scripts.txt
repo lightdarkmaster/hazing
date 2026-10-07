@@ -1,0 +1,494 @@
+Zoho Desk Custom Widget Admin Training Story
+Training Scenario: “Customer Information Widget”
+Business story:
+A support agent receives a ticket from a customer. Instead of opening multiple systems to look for customer information, the Zoho Desk custom widget automatically displays the customer's profile, account information, and relevant details directly inside the ticket.
+
+The admin's role is to ensure this widget continues to work, update its configuration when requirements change, and troubleshoot issues when they occur.
+1. Training Flow
+You can structure the training like this:
+BUSINESS PROBLEM
+       ↓
+DEMO THE WIDGET
+       ↓
+HOW THE WIDGET WORKS
+       ↓
+CREATE A WIDGET
+       ↓
+CONFIGURE THE WIDGET
+       ↓
+CONNECT WIDGET TO ZOHO DESK
+       ↓
+TEST THE WIDGET
+       ↓
+MAINTAIN THE WIDGET
+       ↓
+UPDATE / ENHANCE THE WIDGET
+       ↓
+TROUBLESHOOT
+       ↓
+ADMIN HANDOVER / BEST PRACTICES
+
+2. Opening Story
+Start the training with the problem, not the code.
+Presenter Script
+“Before we discuss how to create or maintain a widget, let's first look at why we need one.”
+“Imagine that an agent receives a customer ticket. The agent needs to check the customer's account information before responding. Without the widget, they may need to open another system, search for the customer, copy the customer number, and manually look for the information.”
+“Our goal is to reduce those steps by bringing the required information directly into Zoho Desk.”
+
+Then show the widget.
+Ask the admins:
+“From an administrator's perspective, what happens if this information needs to change?”
+“What if the API changes?”
+“What if we need to add another field?”
+“What if the widget stops displaying information?”
+
+This creates the reason for the rest of the training.
+3. Live Demo: Show the Finished Widget First
+Before explaining how it was created, demonstrate the end result.
+Example:
+Zoho Desk Ticket
+────────────────────────────
+
+Customer: ABC Corporation
+Customer Number: 100245
+Account Type: Corporate
+Location: Manila
+Status: Active
+
+────────────────────────────
+[ Customer Profile Widget ]
+
+Customer Information
+✓ Customer Number
+✓ Account Name
+✓ Sales Organization
+✓ Distribution Channel
+✓ Region
+
+[Refresh]
+
+Explain:
+“This is what the agent sees. The important thing for administrators is that the widget is not just a UI component. It communicates with Zoho Desk and potentially other systems to retrieve and display information.”
+
+4. Explain the Widget Architecture
+Keep this part visual and simple.
+Zoho Desk
+    │
+    │ Ticket / User / Organization Data
+    ↓
+Custom Widget
+    │
+    ├── Frontend / UI
+    │
+    ├── Widget Logic
+    │
+    └── API / Zoho Desk Connection
+             │
+             ↓
+       External System
+
+Explain each component:
+1. Widget UI
+What the administrator/user sees.
+Examples:
+- Buttons
+- Forms
+- Tables
+- Customer information
+- Notifications
+- Loading indicators
+2. Widget Logic
+Controls what happens when the user interacts with the widget.
+Example:
+Click "Search Customer"
+        ↓
+Get Customer Number
+        ↓
+Call API
+        ↓
+Receive Customer Data
+        ↓
+Display Result
+
+3. API / Connections
+Responsible for communicating with Zoho Desk or external systems.
+4. Zoho Desk
+Provides the ticket, customer, organization, or other relevant context.
+5. Part 1 — Creating a Custom Widget
+Now transition into the admin workflow.
+Say:
+“Now that we understand what the widget does, let's look at what an administrator needs to know when creating one.”
+
+Show the creation process:
+Zoho Desk
+   ↓
+Setup
+   ↓
+Developer Space / Widgets
+   ↓
+Create Widget
+   ↓
+Select Widget Type
+   ↓
+Configure Location
+   ↓
+Upload / Configure Application
+   ↓
+Save
+   ↓
+Test
+
+Explain the important decisions:
+Widget Name
+Use a meaningful name.
+Example:
+Customer Profile Widget
+
+Avoid:
+Test Widget 2
+
+Widget Location
+Explain where the widget will appear:
+- Ticket detail page
+- Left panel
+- Right panel
+- Custom location
+Scope / Permissions
+Explain that the widget may require permission to access:
+- Tickets
+- Contacts
+- Accounts
+- Users
+- Other Zoho services
+6. Part 2 — Widget Configuration
+Now introduce a realistic change request.
+Story
+Tell the admins:
+“The business team has requested that the Customer Profile Widget also display the customer's Region.”
+
+Then ask:
+“Where would we make this change?”
+
+Walk through:
+Requirement
+    ↓
+Identify Data Source
+    ↓
+Check API / Field
+    ↓
+Update Widget
+    ↓
+Update UI
+    ↓
+Test
+    ↓
+Publish
+
+This is important because it teaches admins that not every widget change is simply a UI change.
+7. Part 3 — Maintaining the Widget
+Use a maintenance scenario.
+Story
+“Three months after deployment, an admin reports that the Customer Profile Widget is no longer displaying the customer's information.”
+
+Ask the trainees:
+“What would you check first?”
+
+Teach them to follow a structured process.
+Troubleshooting Flow
+Widget not working
+       ↓
+Is the widget loading?
+       ↓
+     YES ─────→ Is data displayed?
+       │              ↓
+       │             NO
+       │              ↓
+       │       Check API / Connection
+       │
+      NO
+       ↓
+Check Widget Configuration
+       ↓
+Check Console / Error
+       ↓
+Check Permissions
+       ↓
+Check API
+       ↓
+Test Again
+
+8. Admin Maintenance Checklist
+Give them a simple checklist.
+Widget Health
+Area	What to Check
+Widget Loading	Does the widget open correctly?
+UI	Are fields/buttons displaying correctly?
+API	Is the API returning data?
+Connection	Is the Zoho connection valid?
+Permissions	Does the widget still have required scopes?
+Fields	Do the referenced fields still exist?
+Authentication	Are credentials/connections still valid?
+Errors	Are there console/API errors?
+Performance	Is the widget responding normally?
+
+
+9. Part 4 — Updating the Widget
+Use another realistic business request.
+Scenario
+“The business wants to add a Customer Status field to the widget.”
+
+Show the development lifecycle:
+Business Request
+      ↓
+Requirement Analysis
+      ↓
+Identify Data Source
+      ↓
+Update Widget
+      ↓
+Test in Development
+      ↓
+Admin/User Testing
+      ↓
+Production Deployment
+      ↓
+Post-Deployment Validation
+
+Emphasize:
+Never directly modify production without testing.
+
+10. Demonstrate a Small Change
+For training, make one small live change.
+For example:
+Current
+Customer Name
+Customer Number
+Account Name
+Region
+
+Requirement
+Add:
+Customer Status
+
+Then demonstrate:
+1. Identify field
+       ↓
+2. Retrieve field value
+       ↓
+3. Add it to widget logic
+       ↓
+4. Add it to UI
+       ↓
+5. Test
+       ↓
+6. Verify result
+
+This gives the admins a practical understanding of the entire lifecycle.
+11. Part 5 — Testing
+Teach them that testing should happen at different levels.
+Basic Test
+Does the widget open?
+
+Functional Test
+Does the customer information display correctly?
+
+Negative Test
+What happens if the customer doesn't exist?
+
+Permission Test
+What happens if the user doesn't have access?
+
+API Test
+What happens if the external system is unavailable?
+
+Example
+Customer Found
+     ↓
+Display Customer Information
+
+Customer Not Found
+     ↓
+"Customer profile not found."
+
+API Error
+     ↓
+"Unable to retrieve customer information."
+
+No Permission
+     ↓
+"Access denied."
+
+12. Part 6 — Version Control / Change Management
+This is especially important for admins maintaining custom widgets.
+Teach them to document every change.
+Example:
+Version	Date	Change	Owner
+1.0	Jan 2026	Initial widget	Developer
+1.1	Feb 2026	Added Region	Developer
+1.2	Mar 2026	Updated API	Developer
+1.3	Apr 2026	Added Customer Status	Admin/Developer
+
+
+Explain:
+“If something breaks after an update, we should be able to identify what changed.”
+
+13. Final Scenario — Put the Admins in Control
+This can be your best training exercise.
+Give them this situation:
+Scenario:
+The Customer Profile Widget was working yesterday. Today, agents report that the Customer Number is no longer displayed.
+
+Ask the admin to investigate.
+Give them clues one at a time.
+Clue 1
+The widget loads normally.
+What does this tell us?
+→ The widget itself is probably loading correctly.
+Clue 2
+Other customer fields are displaying.
+→ The connection may still be working.
+Clue 3
+Only Customer Number is missing.
+→ Investigate the specific field/API mapping.
+Clue 4
+The backend field was renamed.
+→ Update the widget mapping.
+Final Flow
+Reported Issue
+      ↓
+Reproduce Issue
+      ↓
+Identify Scope
+      ↓
+Check Widget
+      ↓
+Check API
+      ↓
+Check Field Mapping
+      ↓
+Identify Root Cause
+      ↓
+Apply Fix
+      ↓
+Test
+      ↓
+Deploy
+      ↓
+Document Change
+
+This makes the training much more practical than simply explaining configuration screens.
+14. Recommended Training Agenda
+For a 60–90 minute admin training, I would structure it like this:
+Time	Topic
+5 min	Business Problem & Objective
+10 min	Live Widget Demonstration
+10 min	Widget Architecture
+15 min	Creating a Widget
+10 min	Widget Configuration
+10 min	Maintaining the Widget
+10 min	Updating the Widget
+10 min	Troubleshooting
+10 min	Admin Hands-on Scenario
+5 min	Q&A / Best Practices
+
+
+15. Your Overall Presentation Story
+You can make the entire presentation follow one continuous story:
+“We have a customer support team. Agents need customer information while handling tickets. To reduce manual work, we created a custom Zoho Desk widget.”
+
+Then:
+Business Need
+     ↓
+Create Widget
+     ↓
+Configure Widget
+     ↓
+Connect Data
+     ↓
+Test Widget
+     ↓
+Deploy
+     ↓
+Maintain
+     ↓
+Business Requests Change
+     ↓
+Update Widget
+     ↓
+Something Breaks
+     ↓
+Troubleshoot
+     ↓
+Fix & Document
+
+The key message for the admins
+End with:
+“Managing a custom widget is not only about creating it. The administrator should understand the complete lifecycle: Create → Configure → Test → Maintain → Update → Troubleshoot → Document.”
+
+That gives your training a much stronger developer-to-admin handover story rather than making it feel like a technical walkthrough of Zoho Desk screens.
+
+
+
+
+
+
+
+
+
+
+
+
+
+can you summarize this to make it shorter
+
+
+
+
+
+
+
+
+
+
+
+
+Yes. For an admin training, you can simplify the story into one continuous scenario:
+Zoho Desk Custom Widget Admin Training Flow
+1. Business Scenario
+“Agents need customer information while handling tickets. Instead of checking another system, we created a custom widget that displays the information directly in Zoho Desk.”
+
+2. Demonstrate the Widget
+Show the finished widget and explain:
+- What information it displays
+- Where it gets the data
+- How agents use it
+3. Create & Configure
+Walk admins through:
+Zoho Desk → Setup → Developer Space → Widgets → Create Widget
+Cover:
+- Widget name
+- Location
+- Permissions/scopes
+- Connections/API
+- Basic configuration
+4. Maintain the Widget
+Introduce a problem:
+“The widget suddenly stops displaying customer information.”
+
+Show the troubleshooting flow:
+Check Widget → Check Permissions → Check Connection → Check API → Check Field Mapping → Test
+5. Update the Widget
+Give a simple change request:
+“The business wants to add Customer Status.”
+
+Show:
+Requirement → Update Widget → Test → Deploy → Document
+6. Hands-on Admin Scenario
+Give the admins a problem:
+“The widget loads, but Customer Number is missing.”
+
+Let them identify the issue and follow the troubleshooting process.
+7. Closing Message
+Create → Configure → Test → Maintain → Update → Troubleshoot → Document
+
+The main objective is for admins to understand that managing a custom widget is a lifecycle, not just creating the widget once.
