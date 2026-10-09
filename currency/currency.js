@@ -1,7 +1,7 @@
 // server.js  (Node 18+, run: npm i express)
 const express = require("express");
 const app = express();
-
+/// Neet to test the API, you can use the following curl command:
 let cache = { rate: null, fetchedAt: 0 };
 const TTL_MS = 60 * 60 * 1000; // 1 hour
 
