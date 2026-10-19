@@ -26,5 +26,5 @@ app.get("/api/exchange-rate/php-usd", async (req, res) => {
     res.status(502).json({ error: "Could not fetch exchange rate" });
   }
 });
-
+console.log("Server is running on http://localhost:3000");
 app.listen(3000, () => console.log("Listening on :3000"));
