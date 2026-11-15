@@ -1,5 +1,3 @@
-package TestExam;
-
 public class expense {
     public static void main(String[] args){
         double salary = 10000;
@@ -7,7 +5,6 @@ public class expense {
         double internet = 1499;
         double loan = 1500;
         double bike = 7589;
-
 
         double firstCutOffTotalExpenses = bike;
         System.out.println("First Cut Off");
